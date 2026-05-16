@@ -1,9 +1,8 @@
 #Setting Gazebo Turtlebot3
 
 1. Install Gazebo
-sudo apt install ros-humble-gazebo-*
 ```python
-print('hello')
+sudo apt install ros-humble-gazebo-*
 ```
 
 2. Install Cartographer
