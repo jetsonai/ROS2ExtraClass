@@ -41,4 +41,8 @@ echo 'source /opt/ros/humble/setup.bash' >> ~/.bashrc
 source ~/.bashrc
 ```
 
+6. Launch Simulation World
+```python
+ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+```
 
