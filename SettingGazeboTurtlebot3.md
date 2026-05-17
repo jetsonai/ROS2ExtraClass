@@ -34,7 +34,8 @@ source ~/.bashrc
 
 5. Environment Configuration
 ```python
-echo 'export ROS_DOMAIN_ID=30 #TURTLEBOT3' >> ~/.bashrc
+echo 'export ROS_DOMAIN_ID=30 ' >> ~/.bashrc
+echo 'export TURTLEBOT3_MODEL=burger ' >> ~/.bashrc
 echo 'source /usr/share/gazebo/setup.sh' >> ~/.bashrc
 echo 'source /opt/ros/humble/setup.bash' >> ~/.bashrc
 source ~/.bashrc
