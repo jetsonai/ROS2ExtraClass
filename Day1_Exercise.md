@@ -30,9 +30,7 @@ mkdir -p ros2study_ws/src
 
 cd ros2study_ws/src
 
-ros2 pkg create mini_pubsub --build-type ament_python --dependencies rclpy std_msgs
-
-소스코드 다운받아서 mini_pubsub/src 폴더 안에 위치시킨다.
+전달받은 패키지 압축을 풀어서 ros2study_ws/src 아래에 위치시킨다. (폴더 구조 체크 필수)
 
 ### 빌드
 
