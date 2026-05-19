@@ -1,5 +1,9 @@
 #Setting Gazebo Turtlebot3
 
+한번 update 하고 시작하는게 좋습니다.
+
+sudo apt update
+
 1. Install Gazebo
 ```python
 sudo apt install ros-humble-gazebo-*
