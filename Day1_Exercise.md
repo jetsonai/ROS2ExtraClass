@@ -23,36 +23,38 @@ ros2 topic info /turtle1/cmd_vel
 
 ros2 topic echo /turtle1/pose
 
-
-## ros2 workspace 생성 
+## mini pub sub
+### ros2 workspace 생성 
 
 mkdir -p ros2study_ws/src
 
 cd ros2study_ws/src
 
-ros2 pkg create py_pubsub --build-type ament_python --dependencies rclpy std_msgs
+ros2 pkg create mini_pubsub --build-type ament_python --dependencies rclpy std_msgs
 
-소스코드 다운받아서 py_pubsub/src 폴더 안에 위치시킨다.
+소스코드 다운받아서 mini_pubsub/src 폴더 안에 위치시킨다.
 
-## 빌드
+### 빌드
 
 cd
 
 cd ros2study_ws
 
-colcon build --packages-select py_pubsub
+colcon build --packages-select mini_pubsub
 
-## talker 실행
-
-source install/setup.bash
-
-ros2 run py_pubsub talker
-
-## talker 실행
+### publisher 실행
 
 source install/setup.bash
 
-ros2 run py_pubsub listener
+ros2 run py_pubsub minimal_publisher
+
+### subscriber 실행
+
+source install/setup.bash
+
+ros2 run py_pubsub minimal_subscriber 
+
+
 
 ## Gazebo 실행
 
