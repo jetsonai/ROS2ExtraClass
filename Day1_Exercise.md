@@ -44,13 +44,13 @@ colcon build --packages-select mini_pubsub
 
 source install/setup.bash
 
-ros2 run py_pubsub minimal_publisher
+ros2 run mini_pubsub minimal_publisher
 
 ### subscriber 실행
 
 source install/setup.bash
 
-ros2 run py_pubsub minimal_subscriber 
+ros2 run mini_pubsub minimal_subscriber 
 
 
 
