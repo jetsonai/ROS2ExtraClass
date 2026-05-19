@@ -61,4 +61,3 @@ ros2 run py_pubsub minimal_subscriber
 ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 
 
-
