@@ -45,8 +45,19 @@ echo 'source /opt/ros/humble/setup.bash' >> ~/.bashrc
 source ~/.bashrc
 ```
 
+6. install turtlebot gazebo
+```python
+cd ~/turtlebot3_ws/src/
+git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+cd ~/turtlebot3_ws && colcon build --symlink-install
+```
+
 6. Launch Simulation World
 ```python
 ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 ```
 
+6. teleop
+```python
+ros2 run turtlebot3_teleop teleop_keyboard
+```
